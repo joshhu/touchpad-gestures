@@ -1,5 +1,7 @@
 # touchpad-gestures
 
+English | [繁體中文](README.zh-TW.md)
+
 Windows 11 Precision Touchpad gestures that launch apps and act differently depending on
 the window in front, plus a tiny background helper (`CloseActive.exe`) that makes the
 context-aware ones work.
@@ -27,7 +29,11 @@ Windows can map a gesture only to a fixed key combo, so each gesture sends a hot
 
 ## Requirements
 
-- Windows 11 with a Precision Touchpad
+- Windows 11 (custom-shortcut gestures are a Windows 11 feature)
+- A Windows Precision Touchpad, any brand. Check **Settings > Bluetooth & devices >
+  Touchpad**: if it has **Advanced gestures** with custom shortcuts, it works. Touchpads
+  on vendor-specific drivers (some older Synaptics/Elan) don't support this. Without a
+  touchpad, the hotkeys still work from the keyboard.
 - PowerShell 7, Windows Terminal, Google Chrome at the default path
 - .NET Framework 4.x (built into Windows; its `csc.exe` compiles the helper, native arm64 or x64)
 
